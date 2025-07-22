@@ -2,36 +2,48 @@
     margin: 0;
     padding: 0;
     font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body{
+    height: 100%;
+    width: 100%;
 }
 header{
+    width: 100%;
     height: 80px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(11, 11, 11, 0.1);
 }
 .navbar{
     display: flex;
     align-items: center;
 }
-a{
+.navbar a{
     text-decoration: none;
     color:black;
     font-size: 13.49px;
     font-weight: 700;
     margin-left: 40px;
+    padding: 28px 0;
+    border-bottom: 3px solid white;
 }
-.navbar_link{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar a:hover{
+    border-bottom: 3px solid #ff3f6c;
 }
-.navbar_link a sup{
+.navbar a sup{
     color: #ff3f6c;
 }
-.navbar_link img{
-    height: 35px;
-    width: 35px;
+.navbar img{
+    height: 40px;
+    width: 40px;
     margin-left: 40px;
     
 }
@@ -43,7 +55,7 @@ a{
     justify-content: center;
  }
 .search_icon{
-    height: 20px;
+    height: 40px;
     width: 40px;
     background-color: #f5f5f6;
     border: 1px solid #f5f5f6;
@@ -54,8 +66,8 @@ a{
 }
 
  .search_input{
-    width: 400px;
-    height: 20px;
+    min-width: 450px;
+    height: 40px;
     padding: 8px 10px 10px;
     background: #f5f5f6;
     border: 1px solid #f5f5f6;
@@ -64,42 +76,57 @@ a{
     font-weight: 600;
 } 
 /* doneeeeeeeeeeeeeeeeeeeeeeeeeeee */
-.profile_section {
-    /* display:flex; */
-    margin-left: 40px;
-}
-.profile_section div{
-    margin-left: 40px;
+.action_bar{
+    margin-right: 50px;
+    margin-left: 90px;
+    display: flex;
+    gap: 80px;
+    font-size: 13.49px;
     font-weight: 700;
     
 }
-.profile_section .profile {
+.profile_section{
     display: flex;
     align-items: center;
-    font-size: 13.49px;
-    color: black;
-    
+    flex-direction: column;
 }
-
-.wishlist_section .material-symbols-outlined{
-    height: 40px;
-    width: 40px;;
-}
-/* will do the upper section later */
+/* doneeeeeeeeeeeeeeeeeeeeeeeeeeee */
 
 .front_image{
     margin-top: 20px;
 }
 .rising_star{
-    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
 }
 .rising_star h2{
     margin: 50px 0px 10px 30px;
-    font-size: 30px;
     color: #3e4152;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.rising_star_images{
+    display: flex;
 }
 .rising_star_images img{
-    height: 201.41px;
-    width: 264.08px;
-    background-color: blueviolet;
+    padding: 50px 0px 15px;
+    background-color: rgb(255, 255, 255);
 }
+.luxe_section h2{
+    margin: 50px 0px 10px 30px;
+    color: #3e4152;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.luxe_images{
+  width: 100%;
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.luxe_images img{
+   padding: 50px 0px 15px;  
+}
+
