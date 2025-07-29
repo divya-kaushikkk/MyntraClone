@@ -7,7 +7,7 @@
 }
 html, body {
   width: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 body{
@@ -344,7 +344,7 @@ header{
 }
 
 
-@media (max-width: 480px){
+@media (min-width: 280px) AND (max-width: 699px){
     .navbar a{
         display: none;
     }
@@ -373,4 +373,120 @@ header{
         height: auto;
         width: 80px;
     }
+}
+
+
+@media (min-width: 700px) and (max-width: 1024px){
+    .navbar a{
+        display: none;
+    }
+    .search_bar{
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .action_bar{
+        gap: 15px;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    .profile_text{
+        display: none;
+    }
+    .rising_star_images img{
+        display: block;
+        height: auto;
+        width: 100px;
+        gap: 10px;
+    }
+    .luxe_images img{
+        display: block;
+        height: auto;
+        width: 85px;
+    }
+    .shopBy_images img{
+        height: auto;
+        width: 80px;
+    }
+}
+
+
+@media (max-width: 767px) {
+  .footer {
+    height: auto;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .footer_section {
+    width: 100%;
+  }
+
+  .footer_text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+  }
+
+
+  .footer_text1, .footer_text2 {
+    width: 48%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  
+  .footer_text3 {
+    width: 100%;
+    order: 3;
+    margin-top: 20px;
+  }
+
+  
+  .footer_text4 {
+    width: 100%;
+    order: 4;
+    margin-top: 20px;
+  }
+
+  .footer_text4 .footer4 {
+    flex-wrap: wrap;
+  }
+
+  .adress_section {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    gap: 15px;
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+
+  .adress_text2 p {
+    margin-left: 0;
+  }
+
+  .button_class {
+    width: 40%;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer h4{
+    font-size: 15px;
+
+  }
+  .footer_text3 a img {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 10px !important;
+  }
+
+  .custom-line {
+    margin: 20px 0;
+  }
 }
