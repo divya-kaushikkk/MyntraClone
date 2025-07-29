@@ -7,7 +7,7 @@
 }
 html, body {
   width: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 body{
@@ -147,8 +147,14 @@ header{
 .luxe_images img{
    padding: 50px 5px 15px;  
 }
+.shopby_section img{
+    width: 110%;
+    height: auto;
+    display: block;
+}
 .shopby_section {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -167,12 +173,12 @@ header{
     width: 180px;  
     height: 220px;
     border: 10px solid white;
-    
 }
-.above_footer_img{
+.above-footer-img img{
     width: 100%;
     height: auto;
     display: block;
+    margin-left: 0px;
 }
 
 /* footer ka section */
@@ -354,5 +360,17 @@ header{
     }
     .rising_star_images img{
         display: block;
+        height: auto;
+        width: 100px;
+        gap: 10px;
+    }
+    .luxe_images img{
+        display: block;
+        height: auto;
+        width: 85px;
+    }
+    .shopBy_images img{
+        height: auto;
+        width: 80px;
     }
 }
